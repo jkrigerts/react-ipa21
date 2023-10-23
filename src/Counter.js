@@ -1,17 +1,22 @@
 import { useState } from "react";
 
-function Counter() {
+function Counter(props) {
   const [count, setCount] = useState(0);
-
+  const [input, setInput] = useState(1);
   function palielinatajs() {
-    setCount(count + 1);
+    setCount(count + parseInt(input));
     console.log("Count ir " + count);
+  }
+
+  function handleInput(event) {
+    setInput(event.target.value);
   }
 
   return (
     <div>
-      <h2>Skaitītājs</h2>
-      <button onClick={palielinatajs}>+1</button>
+      <h2>{props.name}</h2>
+      <input type="number" value={input} onChange={handleInput} />
+      <button onClick={palielinatajs}>+{input}</button>
       <p>{count}</p>
     </div>
   );
