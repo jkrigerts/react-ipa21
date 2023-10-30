@@ -1,4 +1,5 @@
 import Counter from "./Counter";
+import Hello from "./Hello";
 
 // .map() metode
 
@@ -17,6 +18,7 @@ function App() {
     <>
       <h1>Hi mom</h1>
       {masivsJSX}
+      <Hello />
     </>
   );
 }
