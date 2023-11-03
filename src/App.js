@@ -1,5 +1,6 @@
 import Counter from "./Counter";
 import Hello from "./Hello";
+import CheckBox from "./CheckBox";
 
 // .map() metode
 
@@ -19,6 +20,8 @@ function App() {
       <h1>Hi mom</h1>
       {masivsJSX}
       <Hello />
+      <CheckBox label="Hi" checked={true} />
+      <CheckBox label="Sus" checked={false} />
     </>
   );
 }

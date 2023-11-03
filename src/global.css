@@ -3,5 +3,7 @@ h1 {
 }
 
 body {
-  background-color: #add8e6;
+  background: linear-gradient(to right, black, #222222);
+
+  color: white;
 }
